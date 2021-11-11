@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="main">
+    <h1>Welcome to SvelteKit</h1>
+
+    Here's some data coming from our RSS feed
+
+    <div class="posts">
+        <ul class="listing">
+            {#each netlify.rss.channel.item as post }
+            <li><a href="{ post.link }">{ post.title }</a></li>
+            {/each}
+        </ul>
+    </div>
+</div>
+
+<script>
+    import netlify from "../data/netlify"
+</script>
