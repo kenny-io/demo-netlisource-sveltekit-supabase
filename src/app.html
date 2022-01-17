@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%svelte.head%
 	</head>
@@ -10,3 +11,21 @@
 		<div id="svelte">%svelte.body%</div>
 	</body>
 </html>
+
+<style>
+
+	@font-face {
+		font-family: SF Pro Display;
+		src: url('./fonts/sf-pro/SFProDisplay-Regular.ttf');
+		font-style: normal;
+        font-weight: 700;
+  		font-display: swap;	
+	}
+	@font-face {
+		font-family: SF Pro Text;
+		src: url('./fonts/sf-pro/SFProText-Regular.ttf');
+		font-style: normal;
+        font-weight: normal;
+  		font-display: swap;	
+	}
+</style>

@@ -13,6 +13,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@supabase/supabase-js": "^1.29.1",
     "netlify-plugin-fetch-feeds": "^0.2.3"
   }
 }
